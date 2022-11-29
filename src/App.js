@@ -83,13 +83,11 @@ const App = () => {
     setAccount(accounts[0]);
     const networkId = await web3.eth.net.getId();
 
-    if (networkId == 42) {
+    if (networkId == 97) {
       // const hello = new web3.eth.Contract(Helloabi.abi, networkData.address);
       const electionContract = new web3.eth.Contract(
         Election.abi,
-        "0x805A2FE9C5E407B6A9BF20e5db1ac6d7c8858268"
-        // "0x328924867Ce757bF1Ad98C64B9446128f301ABc1"
-        // "0xAd018C7D9ed0332059E31CceDd904455D93f0547"
+        "0x9eC5eF19e167cb9b8FF414b432490395fEA743c0"
       );
 
       setElectioncontract(electionContract);
