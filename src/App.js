@@ -83,7 +83,7 @@ const App = () => {
     setAccount(accounts[0]);
     const networkId = await web3.eth.net.getId();
 
-    if (networkId == 97) {
+    if (networkId == 80001) {
       // const hello = new web3.eth.Contract(Helloabi.abi, networkData.address);
       const electionContract = new web3.eth.Contract(
         Election.abi,
